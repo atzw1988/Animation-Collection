@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="/assets/css/demo.css">
   <link rel="stylesheet" href="/css/cont.css">
   <link rel="stylesheet" href="/css/showcase.css">
+  <link rel="stylesheet" href="/css/lb_gl.css">
+  <link rel="stylesheet" href="/css/cardBanner.css">
+  <link rel="stylesheet" href="/css/leader.css">
   <title>常用的特效轮播图</title>
 </head>
 <body>
@@ -331,5 +334,186 @@
     </div>
   </div>
   <script src="/js/showcase.js"></script>
+  <!-- 叠加图片滚动切换 -->
+  <div class="lb_gl_content">
+    <div style="height: 700px;width: 800px;margin:0 auto;">
+      <!--轮播-->
+      <div class="lb_gl">
+        <div class="container">
+          <div class="pictureSlider poster-main">
+            <ul id="zturn" class="poster-list">
+              <li class="poster-item  zturn-item">
+                <p class="xxgy">我是滚动1</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d1.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动2</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d2.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动3</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d3.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动4</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d4.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动5</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d5.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item  zturn-item">
+                <p class="xxgy">我是滚动6</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d1.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动7</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d2.png" width="100%">
+                </div>
+              </li>
+              <li class="poster-item zturn-item">
+                <p class="xxgy">我是滚动8</p>
+                <p class="say">明月几时有</p>
+                <div class="for_btn">
+                  <img src="img/d3.png" width="100%">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/zturn.js"></script>
+  <script type="text/javascript">
+    var aa = new zturn({
+      id: "zturn",
+      opacity: 0.9,
+      width: 200,
+      Awidth: 300,
+      scale: 0.9,
+      auto: true, //是否轮播 默认5000
+      turning: 2000 //轮播时长
+    })
+  </script>
+  <!-- 卡片轮播 -->
+  <div class="cardBanner">
+    <div id="banner">
+      <div id="carousel">
+        <img src="img/e1.png" data-url="#">
+        <img src="img/e2.png" data-url="#">
+        <img src="img/e3.png" data-url="#">
+        <img src="img/e4.png" data-url="#">
+        <img src="img/e5.png" data-url="#">
+        <img src="img/e6.png" data-url="#">
+        <img src="img/e7.png" data-url="#">
+        <img src="img/e8.png" data-url="#">
+      </div>
+    </div>
+  </div>
+  <script src="/js/slider.js"></script>
+  <script>
+    $(function () {
+      $('#carousel').carousel({
+        curDisplay: 0, //默认索引
+        autoPlay: true, //是否自动播放
+        interval: 3000 //间隔时间
+      });
+    });
+  </script>
+  <!-- 3D旋转切换图片 -->
+  <div class="loaderContent">
+    <!-- coidea:loader START -->
+    <div class="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- coidea:loader END -->
+    <!-- coidea:slideshow:navigation START -->
+    <nav id="nav">
+      <button id="prev" class="nav-item" data-increment="-1">
+        <img src="img/icon-prev.png" alt="prev" /> </button>
+      <button id="next" class="nav-item" data-increment="1">
+        <img src="img/icon-next.png" alt="next" /> </button>
+    </nav>
+    <!-- coidea:slideshow:navigation END -->
+    <!-- coidea:slideshow START -->
+    <section class="coidea-3d-carousel">
+      <div class="stage">
+        <!-- coidea:slideshow:item START -->
+        <div class="item">
+          <div class="bcg" style="background-image: url(img/img-1.jpeg);"></div>
+          <div class="content">
+            <div class="description">
+              <p class="description-target">1483 - 1843</p>
+            </div>
+            <div class="headline">
+              <h2 class="headline-target">Dream big</h2>
+            </div>
+            <div class="discover-more">
+              <a href="#" class="discover-more-target">Discover More</a> </div>
+          </div>
+        </div>
+        <!-- coidea:slideshow:item END -->
+        <!-- coidea:slideshow:item START -->
+        <div class="item">
+          <div class="bcg" style="background-image: url(img/img-2.jpeg);"></div>
+          <div class="content">
+            <div class="description">
+              <p class="description-target">1723 - 1798</p>
+            </div>
+            <div class="headline">
+              <h2 class="headline-target">Pray bigger</h2>
+            </div>
+            <div class="discover-more">
+              <a href="#" class="discover-more-target">Discover More</a> </div>
+          </div>
+        </div>
+        <!-- coidea:slideshow:item END -->
+        <!-- coidea:slideshow:item START -->
+        <div class="item">
+          <div class="bcg" style="background-image: url(img/img-3.jpeg);"></div>
+          <div class="content">
+            <div class="description">
+              <p class="description-target">1845 - 1853</p>
+            </div>
+            <div class="headline">
+              <h2 class="headline-target">Keep going</h2>
+            </div>
+            <div class="discover-more">
+              <a href="#" class="discover-more-target">Discover More</a> </div>
+          </div>
+        </div>
+        <!-- coidea:slideshow:item END -->
+
+      </div>
+    </section>
+    <!-- coidea:slideshow END -->
+  </div>
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/loader.js"></script>
 </body>
 </html>

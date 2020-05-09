@@ -96,7 +96,7 @@
 }
 
 .drop {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: calc(50% - 45px);
   width: 90px;
