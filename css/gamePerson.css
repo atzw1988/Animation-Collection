@@ -1,0 +1,218 @@
+.gamePerson {
+  width: 100%;
+  position: absolute;
+  margin-top: 8400px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.containerGame {
+  max-width: 1920px;
+  min-width: 1200px;
+  height: 973px;
+  background: url(/img/bg.jpg) no-repeat;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boxGame {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.boxGame .p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.boxGame .p img,
+.boxGame .p .name {
+  position: absolute;
+  bottom: 0;
+  transition: all 1s ease;
+}
+
+.boxGame .p1 img {
+  left: 300px;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.boxGame .p2 img {
+  left: 500px;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.boxGame .p3 img {
+  left: 400px;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.boxGame .p4 img {
+  left: 450px;
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.boxGame .p1.show img,
+.boxGame .p2.show img,
+.boxGame .p3.show img,
+.boxGame .p4.show img {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.boxGame .p1 .name {
+  position: absolute;
+  width: 305px;
+  height: 413px;
+  left: 108px;
+  transform: translateX(-20%);
+  opacity: 0;
+  bottom: 275px;
+  background: url(/img/sprite.png) no-repeat -274px 0px;
+}
+
+.boxGame .p2 .name {
+  position: absolute;
+  width: 293px;
+  height: 407px;
+  left: 186px;
+  bottom: 275px;
+  transform: translateX(-20%);
+  opacity: 0;
+  background: url(/img/sprite.png) no-repeat 0px -421px;
+}
+
+.boxGame .p3 .name {
+  position: absolute;
+  width: 277px;
+  height: 408px;
+  left: 186px;
+  bottom: 275px;
+  transform: translateX(-20%);
+  opacity: 0;
+  background: url(/img/sprite.png) no-repeat -585px 0px;
+}
+
+.boxGame .p4 .name {
+  position: absolute;
+  width: 268px;
+  height: 415px;
+  left: 186px;
+  bottom: 275px;
+  transform: translateX(-20%);
+  opacity: 0;
+  background: url(/img/sprite.png) no-repeat 0px 0px;
+}
+
+.boxGame .p1.show .name,
+.boxGame .p2.show .name,
+.boxGame .p3.show .name,
+.boxGame .p4.show .name {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navGame {
+  position: absolute;
+  width: 129px;
+  top: 200px;
+  right: 300px;
+  z-index: 2;
+}
+
+.navGame li {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 1px auto 0;
+  cursor: pointer;
+  transition: all .6s linear;
+  transform: none !important;
+}
+
+.navGame li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 129px;
+  height: 129px;
+}
+
+.navGame li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity .6s linear;
+}
+
+.navGame li.t1 i {
+  background: url(/img/t1.png) no-repeat center;
+}
+
+.navGame li.t2 i {
+  background: url(/img/t2.png) no-repeat center;
+}
+
+.navGame li.t3 i {
+  background: url(/img/t3.png) no-repeat center;
+}
+
+.navGame li.t4 i {
+  background: url(/img/t4.png) no-repeat center;
+}
+
+.navGame li em {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .6s linear;
+}
+
+.navGame li.t1 em {
+  background: url('/img/t1_on.png') no-repeat center;
+}
+
+.navGame li.t2 em {
+  background: url(/img/t2_on.png) no-repeat center;
+}
+
+.navGame li.t3 em {
+  background: url(/img/t3_on.png) no-repeat center;
+}
+
+.navGame li.t4 em {
+  background: url(/img/t4_on.png) no-repeat center;
+}
+
+.navGame li.on {
+  width: 129px;
+  height: 129px;
+}
+
+.navGame li.on i {
+  opacity: 0;
+}
+
+.navGame li.on em {
+  opacity: 1;
+}

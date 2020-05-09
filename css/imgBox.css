@@ -1,0 +1,28 @@
+.imgBox {
+  width: 100%;
+  position: absolute;
+  margin-top: 7400px;
+}
+
+.boximg {
+  height: 400px;
+  width: 400px;
+  margin: 100px auto;
+  position: relative;
+  transform: rotateX(0deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  cursor: move;
+}
+
+.boximg div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.picbtn {
+  margin: 0 auto;
+  text-align: center;
+}
